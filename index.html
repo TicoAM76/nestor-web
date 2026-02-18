@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soporte Informático Profesional en Valencia | Nestor �Alvarez</title>
+  <meta name="description" content="Soporte informático profesional en Valencia. Reparación y optimización de computadoras, redes y WiFi, copias de seguridad, soporte remoto, mantenimiento, soluciones para negocios y CCTV. Cotiza por WhatsApp." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b3a67" />
+
+  <!-- Favicons (si ya los tienes en /assets/iconos/) -->
+  <link rel="icon" href="/assets/iconos/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/iconos/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/iconos/icon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/iconos/icon-180x180.png">
+  
+  <style>
+    :root{
+      --ink:#0b1220;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --bg:#f7fafc;
+      --card:#ffffff;
+
+      --blue:#0b3a67;
+      --blue2:#1e90ff;
+      --cyan:#2dd4bf;
+
+      --shadow: 0 14px 40px rgba(2,6,23,.10);
+      --radius: 18px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1100px 520px at 15% -10%, rgba(30,144,255,.12), transparent 55%),
+        radial-gradient(900px 500px at 90% 0%, rgba(45,212,191,.10), transparent 50%),
+        var(--bg);
+      line-height:1.35;
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px 16px 56px}
+
+
+html{ scroll-behavior:smooth; }
+
+    /* Topbar */
+.topbar{
+  position:sticky; top:0; z-index:50;
+  background:rgba(247,250,252,.92);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid var(--line);
+}
+
+.topbar-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:10px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:260px;
+}
+
+.brandLink{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:14px;
+  text-decoration:none;
+  flex:0 0 auto;
+}
+
+.brandLogo{
+  width:48px;
+  height:48px;
+  object-fit:contain;
+  border-radius:14px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(229,231,235,.75);
+  padding:6px;
+  box-shadow:
+    0 10px 22px rgba(2,6,23,.10),
+    0 0 0 6px rgba(30,144,255,.10);
+  transition: transform .14s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.brandLogo:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.90);
+  box-shadow:
+    0 14px 28px rgba(2,6,23,.14),
+    0 0 0 8px rgba(45,212,191,.12);
+}
+
+.brandText strong{display:block; font-size:13px}
+.brandText span{display:block; font-size:12px; color:var(--muted)}
+
+.menu{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:flex-end;
+}
+
+.menu a{
+  text-decoration:none;
+  font-size:13px;
+  padding:8px 10px;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:999px;
+  color:var(--ink);
+}
+
+.menu a:hover{border-color:#cbd5e1}
+
+@media (max-width: 920px){
+  .topbar-inner{flex-wrap:wrap}
+  .menu{justify-content:flex-start}
+}
+
+.menu a.active{
+  border-color: rgba(30,144,255,.45);
+  box-shadow: 0 12px 26px rgba(2,6,23,.10);
+  background: linear-gradient(180deg, rgba(11,58,103,.08), rgba(30,144,255,.06));
+}
+
+
+  /* look premium */
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(229,231,235,.75);
+  padding:6px;
+
+  /* glow tech */
+  box-shadow:
+    0 10px 22px rgba(2,6,23,.10),
+    0 0 0 6px rgba(30,144,255,.10);
+
+  transition: transform .14s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.brandLogo:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.90);
+  box-shadow:
+    0 14px 28px rgba(2,6,23,.14),
+    0 0 0 8px rgba(45,212,191,.12);
+}
+
+    .brand strong{display:block; font-size:13px}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+
+    nav{display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end}
+    nav a{
+      text-decoration:none;
+      font-size:13px;
+      padding:8px 10px;
+      border:1px solid var(--line);
+      background:#fff;
+      border-radius:999px;
+      color:var(--ink);
+    }
+    nav a:hover{border-color:#cbd5e1}
+
+    /* Cards */
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .section{padding:18px 20px}
+
+    /* Layout */
+    .grid{
+      display:grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap:18px;
+      margin-top:18px;
+      align-items:stretch;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity:0; transform: translateY(10px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+    .fadeUp{ animation: fadeUp .55s ease both; }
+    .d1{ animation-delay: .06s; }
+    .d2{ animation-delay: .14s; }
+    .d3{ animation-delay: .22s; }
+
+    /* Hero brand */
+    .heroBrandBox{
+      display:flex;
+      justify-content:center;
+      margin: 2px 0 16px;
+    }
+    .heroBrandBox img{
+      width: 280px;
+      max-width: 90%;
+      height:auto;
+      border-radius: 24px;
+      border: 1px solid rgba(229,231,235,.95);
+      background: rgba(255,255,255,.92);
+      padding: 14px 18px;
+      box-shadow: 0 18px 44px rgba(2,6,23,.14);
+      backdrop-filter: blur(6px);
+    }
+
+    h1{margin:0 0 8px; font-size:30px; letter-spacing:-.02em}
+    .tagline{color:var(--muted); font-size:14px; margin-top:2px}
+    .accentLine{
+      margin:12px 0 0;
+      height:4px; width:160px;
+      border-radius:999px;
+      background: linear-gradient(90deg, var(--blue), var(--blue2), var(--cyan));
+      opacity:.95;
+    }
+
+    /* Chips */
+    .chips{display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:14px 0 0}
+    .chip{
+      border:1px solid var(--line);
+      background:#fff;
+      padding:8px 10px;
+      border-radius:999px;
+      color:var(--muted);
+      font-size:13px;
+      display:inline-flex; gap:8px; align-items:center;
+    }
+    .chip b{color:var(--ink)}
+
+    /* CTA */
+    .ctaRow{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .btn{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--ink);
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:900;
+      font-size:14px;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      cursor:pointer;
+      transition:transform .10s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .btn:hover{transform:translateY(-1px); border-color:#cbd5e1; box-shadow:0 12px 30px rgba(2,6,23,.10)}
+    .btn.primary{
+      background:linear-gradient(180deg, rgba(11,58,103,.98), rgba(30,144,255,.88));
+      color:#fff;
+      border-color: rgba(11,58,103,.75);
+    }
+
+    /* Quote */
+    .quoteBox{
+      border-left:6px solid var(--blue);
+      background: linear-gradient(180deg, rgba(11,58,103,.06), rgba(30,144,255,.02));
+      padding:12px 12px;
+      border-radius:14px;
+      color:var(--muted);
+      margin-top:12px;
+    }
+
+    /* Right panel */
+    .sideWrap{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      justify-content:center;
+    }
+
+
+.heroImageBlock{
+  position:relative;
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid rgba(229,231,235,.95);
+  background:#0b3a67;
+  box-shadow: 0 20px 50px rgba(2,6,23,.12);
+  transition: transform .18s ease, box-shadow .2s ease;
+  max-width:600px;
+  margin:0 auto;
+}
+
+.heroImageBlock img{
+  width:100%;
+  height:220px;       /* ← altura tipo banner */
+  object-fit:cover;   /* recorte elegante */
+  display:block;
+  filter: brightness(0.85);
+}
+
+.heroImageBlock::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    90deg,
+    rgba(11,58,103,.85) 0%,
+    rgba(30,144,255,.55) 50%,
+    rgba(45,212,191,.25) 100%
+  );
+}
+
+.heroImageBlock:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 28px 70px rgba(2,6,23,.18);
+}
+
+.bannerText{
+  position:absolute;
+  left:22px;
+  bottom:22px;
+  color:white;
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:.3px;
+  z-index:2;
+}
+
+
+    .heroShot{
+      border:1px solid rgba(229,231,235,.95);
+      border-radius:20px;
+      overflow:hidden;
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 18px 46px rgba(2,6,23,.10);
+    }
+    .heroShot img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    .pillTitle{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin:0 0 8px;
+    }
+    .pillTitle h3{
+      margin:0;
+      font-size:16px;
+      color:var(--blue);
+      letter-spacing:-.01em;
+    }
+    .miniTag{
+      font-size:12px;
+      font-weight:900;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(229,231,235,.95);
+      background:rgba(255,255,255,.92);
+      color:#0b1220;
+      box-shadow:0 10px 24px rgba(2,6,23,.08);
+      white-space:nowrap;
+    }
+
+    .infoCard{
+      border:1px solid rgba(229,231,235,.95);
+      border-radius:20px;
+      background: rgba(255,255,255,.92);
+      padding:14px 14px 12px;
+      box-shadow: 0 18px 46px rgba(2,6,23,.10);
+      transition: transform .14s ease, box-shadow .16s ease, border-color .16s ease;
+    }
+    .infoCard:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 24px 60px rgba(2,6,23,.12);
+      border-color:#cbd5e1;
+    }
+
+    .proList{
+      list-style:none;
+      padding:0; margin:0;
+      display:grid;
+      gap:10px;
+    }
+    .proList li{
+      position:relative;
+      padding-left:28px;
+      font-weight:700;
+      color:#334155;
+      line-height:1.3;
+    }
+    .proList li::before{
+      content:"✓";
+      position:absolute;
+      left:0; top:0;
+      color:var(--blue2);
+      font-weight:1000;
+    }
+
+    /* Social */
+    .social{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .iconBtn{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid var(--line);
+      background:#fff;
+      padding:10px 12px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:900;
+      font-size:13px;
+      color:var(--ink);
+    }
+    .icon{
+      width:28px; height:28px; border-radius:999px;
+      display:inline-flex; align-items:center; justify-content:center;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-weight:900;
+      color: var(--blue);
+    }
+
+    /* Services */
+    h2{margin:0 0 10px; font-size:16px}
+    .muted{color:var(--muted)}
+    .services{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    .svc{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:14px;
+      background:#fff;
+      transition: transform .14s ease, box-shadow .16s ease, border-color .16s ease;
+    }
+    .svc:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 18px 46px rgba(2,6,23,.10);
+      border-color:#cbd5e1;
+    }
+    .svc strong{display:block; font-size:14px; margin-bottom:6px}
+    .svc p{margin:0; color:var(--muted); font-size:13px; line-height:1.45}
+    .svc ul{margin:10px 0 0; padding:0; list-style:none; display:grid; gap:7px}
+    .svc li{display:flex; gap:8px; align-items:flex-start; font-size:13px; color:var(--muted)}
+    .dot{
+      width:10px; height:10px; border-radius:99px;
+      margin-top:4px;
+      background: linear-gradient(180deg, var(--blue2), var(--cyan));
+      flex:0 0 auto;
+    }
+
+    /* Form */
+    .formGrid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px}
+    label{display:block; font-weight:900; font-size:13px; margin-bottom:6px}
+    input, select, textarea{
+      width:100%;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      font:inherit;
+      background:#fff;
+    }
+    textarea{resize:vertical}
+    .legal{font-size:11px; color:#6b7280; margin-top:10px}
+
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:12px;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+      padding:0 6px;
+    }
+
+    @media (max-width: 920px){
+      .grid{grid-template-columns:1fr;}
+      .services{grid-template-columns:1fr;}
+      nav{justify-content:flex-start}
+      .brand{min-width:auto}
+      .accentLine{margin-left:auto;margin-right:auto}
+    }
+
+.waFloat{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 14px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:900;
+  color:#fff;
+  background: linear-gradient(180deg, rgba(11,58,103,.98), rgba(30,144,255,.92));
+  box-shadow: 0 18px 46px rgba(2,6,23,.22);
+  border:1px solid rgba(255,255,255,.18);
+  transition: transform .14s ease, box-shadow .16s ease;
+}
+
+.waFloat:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 24px 60px rgba(2,6,23,.28);
+}
+
+.waDot{
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.18);
+  font-weight:1000;
+}
+
+@media (max-width: 520px){
+  .waFloat span{ display:none; } /* solo icono en móvil */
+  .waFloat{ padding:12px; }
+}
+
+  </style>
+</head>
+
+
+<a class="waFloat"
+   href="https://wa.me/34624484557?text=Hola%20N%C3%A9stor%2C%20quiero%20cotizar%20un%20servicio%20de%20soporte%20inform%C3%A1tico%20en%20Valencia."
+   target="_blank" rel="noopener">
+  <div class="waDot">wa</div>
+  <span>WhatsApp</span>
+</a>
+
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+
+    <div class="brand">
+      <a class="brandLink" href="#inicio" aria-label="Inicio">
+        <img src="/assets/mn-logo.png" class="brandLogo" alt="Mary & Nestor Services">
+      </a>
+
+      <div class="brandText">
+        <strong>Soporte Informático Profesional</strong>
+        <span>Valencia · Hogares y pequeños negocios</span>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#cotizar">Cotizar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+  </div>
+</div>
+
+
+
+  <div class="wrap">
+    <!-- HERO -->
+    <section id="inicio" class="grid">
+      <div class="card section fadeUp d1">
+
+        <div class="heroBrandBox">
+          <img src="/assets/mn-logo.png" alt="Mary & Nestor Services">
+        </div>
+
+        <h1>Soporte Informático en Valencia</h1>
+        <div class="tagline">Soluciones rápidas, claras y profesionales. Presencial y remoto.</div>
+        <div class="accentLine"></div>
+
+        <ul class="chips">
+          <li class="chip">📍 <b>Valencia</b> · alrededores</li>
+          <li class="chip">💬 WhatsApp: <a href="https://wa.me/34624484557" target="_blank" rel="noopener" style="text-decoration:none"><b>+34 624 484 557</b></a></li>
+          <li class="chip">⚡ Respuesta rápida</li>
+        </ul>
+
+        <div class="quoteBox">
+          Diagnóstico y solución con enfoque práctico: equipos, redes, copias de seguridad, soporte remoto y proyectos (incluye <b>diseño y montaje de CCTV</b>).
+        </div>
+
+        <div class="ctaRow" id="contacto" style="margin-top:14px">
+          <a class="btn primary" href="https://wa.me/34624484557?text=Hola%20N%C3%A9stor%2C%20quiero%20cotizar%20un%20servicio%20de%20soporte%20inform%C3%A1tico%20en%20Valencia.%20%C2%BFMe%20puedes%20orientar%3F" target="_blank" rel="noopener">💬 Cotizar por WhatsApp</a>
+          <a class="btn" href="#cotizar">🧾 Cotizar aquí</a>
+          <a class="btn" href="tel:+34624484557">📞 Llamar</a>
+        </div>
+
+        <div class="social" style="margin-top:14px">
+          <!-- Reemplaza # por tus enlaces reales -->
+          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="icon">ig</span> Instagram</a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="icon">tt</span> TikTok</a>
+          <a class="iconBtn" href="#" target="_blank" rel="noopener"><span class="icon">in</span> LinkedIn</a>
+          <a class="iconBtn" href="https://wa.me/34624484557" target="_blank" rel="noopener"><span class="icon">wa</span> WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- PANEL DERECHO (text-first, SEO, ligero) -->
+      <aside class="card fadeUp d2">
+        <div class="sideWrap">
+
+          <!-- Opcional: si tienes /assets/mn-hero.jpg se mostrará -->
+          <div class="heroShot" style="display:none" id="heroShot">
+            <img src="/assets/mn-hero.jpg" alt="Soporte informático en Valencia" onerror="document.getElementById('heroShot').style.display='none'">
+          </div>
+
+          <div class="infoCard fadeUp d2">
+            <div class="pillTitle">
+              <h3>Servicios principales</h3>
+              <span class="miniTag">Hogar & Negocio</span>
+            </div>
+            <ul class="proList">
+              <li>Reparación y optimización</li>
+              <li>Redes y WiFi</li>
+              <li>Copias de seguridad</li>
+              <li>Soporte remoto</li>
+              <li>Mantenimiento</li>
+              <li>Soluciones para negocios</li>
+            </ul>
+          </div>
+
+          <div class="infoCard fadeUp d3">
+            <div class="pillTitle">
+              <h3>Extra: CCTV</h3>
+              <span class="miniTag">Instalación</span>
+            </div>
+            <ul class="proList">
+              <li>Diseño y montaje de CCTV</li>
+              <li>Asesoría, instalación y puesta en marcha</li>
+              <li>Para hogares y pequeños comercios</li>
+            </ul>
+          </div>
+
+<div class="heroImageBlock fadeUp d3">
+  <img src="/assets/servicios-principales.png" alt="Soporte informático profesional">
+  <div class="bannerText">Soporte Profesional</div>
+</div>
+
+<div class="heroImageBlock fadeUp d3">
+  <img src="/assets/extra-cctv.png" alt="Instalación de CCTV en Valencia">
+  <div class="bannerText">Instalación CCTV</div>
+</div>
+
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVICIOS (detalle) -->
+    <section id="servicios" class="card section" style="margin-top:18px">
+      <h2>Servicios</h2>
+      <p class="muted" style="margin:0 0 12px">
+        Elige lo que necesitas. Si no lo ves aquí, escríbeme igual y lo revisamos.
+      </p>
+
+      <div class="services">
+        <div class="svc">
+          <strong>🖥 Reparación y Optimización</strong>
+          <p>Tu ordenador lento, como nuevo.</p>
+          <ul>
+            <li><span class="dot"></span> Limpieza y optimización del sistema</li>
+            <li><span class="dot"></span> Cambio a SSD y mejoras de rendimiento</li>
+            <li><span class="dot"></span> Instalación/actualización de Windows</li>
+            <li><span class="dot"></span> Configuración de programas esenciales</li>
+          </ul>
+        </div>
+
+        <div class="svc">
+          <strong>📶 Redes y WiFi</strong>
+          <p>Conexión estable y cobertura real.</p>
+          <ul>
+            <li><span class="dot"></span> Configuración de routers</li>
+            <li><span class="dot"></span> Solución a cortes o baja velocidad</li>
+            <li><span class="dot"></span> Mejoras WiFi (ubicación, canales, repetidores)</li>
+            <li><span class="dot"></span> Redes pequeñas para oficinas</li>
+          </ul>
+        </div>
+
+        <div class="svc">
+          <strong>🧰 Servicios Profesionales</strong>
+          <p>Soporte para continuidad y seguridad.</p>
+          <ul>
+            <li><span class="dot"></span> Copias de seguridad automáticas</li>
+            <li><span class="dot"></span> Soporte remoto</li>
+            <li><span class="dot"></span> Mantenimiento mensual</li>
+            <li><span class="dot"></span> Diseño y montaje de <b>CCTV</b></li>
+          </ul>
+        </div>
+
+        <div class="svc">
+          <strong>🌐 Páginas Web y Soporte Técnico</strong>
+          <p>Presencia digital simple y profesional.</p>
+          <ul>
+            <li><span class="dot"></span> Creación de páginas web (landing)</li>
+            <li><span class="dot"></span> Mantenimiento técnico</li>
+            <li><span class="dot"></span> Correos y dominio (DNS básico)</li>
+            <li><span class="dot"></span> Soluciones digitales para negocios</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- COTIZAR -->
+    <section id="cotizar" class="card section" style="margin-top:18px">
+      <h2>Cotizar sin compromiso</h2>
+      <p class="muted" style="margin:0">
+        Completa estos datos y envíalos por WhatsApp. Respondo con una propuesta orientativa según necesidad y zona.
+      </p>
+
+      <div class="formGrid">
+        <div>
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" type="text" placeholder="Ej. Carlos" />
+        </div>
+
+        <div>
+          <label for="zona">Zona</label>
+          <select id="zona">
+            <option value="Valencia">Valencia</option>
+            <option value="Paterna">Paterna</option>
+            <option value="Torrent">Torrent</option>
+            <option value="Otra">Otra</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="servicio">Servicio</label>
+          <select id="servicio">
+            <option value="Reparación/Optimización">Reparación/Optimización</option>
+            <option value="Redes y WiFi">Redes y WiFi</option>
+            <option value="Copias de seguridad / Mantenimiento">Copias de seguridad / Mantenimiento</option>
+            <option value="Soporte remoto">Soporte remoto</option>
+            <option value="CCTV (diseño/montaje)">CCTV (diseño/montaje)</option>
+            <option value="Página Web / Soporte técnico">Página Web / Soporte técnico</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="urgencia">Urgencia</label>
+          <select id="urgencia">
+            <option value="Normal">Normal</option>
+            <option value="Hoy (si hay disponibilidad)">Hoy (si hay disponibilidad)</option>
+            <option value="Esta semana">Esta semana</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-top:10px">
+        <label for="detalles">Detalles</label>
+        <textarea id="detalles" rows="4" placeholder="Ej. El WiFi no llega a la habitación / PC muy lento / quiero 2 cámaras CCTV..."></textarea>
+      </div>
+
+      <div class="ctaRow" style="margin-top:12px">
+        <button class="btn primary" type="button" onclick="enviarWhatsApp()">💬 Enviar por WhatsApp</button>
+        <a class="btn" href="tel:+34624484557">📞 Llamar</a>
+      </div>
+
+      <div class="legal">
+        Servicio independiente. Presencial según zona y disponibilidad. Soporte remoto sujeto a conexión y diagnóstico.
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Néstor Álvarez</div>
+      <div>
+        <a href="https://wa.me/34624484557" target="_blank" rel="noopener" style="text-decoration:none">WhatsApp</a>
+        · <a href="tel:+34624484557" style="text-decoration:none">Teléfono</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Si existe mn-hero.jpg, muestra el bloque
+    (function(){
+      const img = new Image();
+      img.onload = () => { const el = document.getElementById('heroShot'); if(el) el.style.display='block'; };
+      img.onerror = () => {};
+      img.src = "/assets/mn-hero.jpg";
+    })();
+
+    function buildMessage(){
+      const nombre = (document.getElementById('nombre').value || '').trim();
+      const zona = document.getElementById('zona').value;
+      const servicio = document.getElementById('servicio').value;
+      const urgencia = document.getElementById('urgencia').value;
+      const detalles = (document.getElementById('detalles').value || '').trim();
+
+      const lines = [
+        "Hola Néstor, quiero cotizar un servicio de soporte informático en Valencia.",
+        nombre ? `Nombre: ${nombre}` : null,
+        `Zona: ${zona}`,
+        `Servicio: ${servicio}`,
+        `Urgencia: ${urgencia}`,
+        detalles ? `Detalles: ${detalles}` : null
+      ].filter(Boolean);
+
+      return lines.join("\n");
+    }
+
+    function enviarWhatsApp(){
+      const text = encodeURIComponent(buildMessage());
+      const url = `https://wa.me/34624484557?text=${text}`;
+      window.open(url, "_blank", "noopener");
+    }
+
+
+
+  // --- Menu active on scroll ---
+  (function(){
+    const links = Array.from(document.querySelectorAll('.menu a'));
+    const ids = links.map(a => (a.getAttribute('href')||'').replace('#','')).filter(Boolean);
+    const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
+
+    function setActive(id){
+      links.forEach(a => {
+        const href = (a.getAttribute('href')||'');
+        a.classList.toggle('active', href === `#${id}`);
+      });
+    }
+
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          setActive(entry.target.id);
+        }
+      });
+    }, { root:null, threshold:0.55 });
+
+    sections.forEach(s => io.observe(s));
+    if(sections[0]) setActive(sections[0].id);
+  })();
+
+
+
+
+  </script>
+</body>
+</html>
